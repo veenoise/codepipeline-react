@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20.9
+    commands:
+      - echo "Installing pnpm..."
+      - npm install -g pnpm
+      - echo "Installing project dependencies..."
+      - pnpm install
+  build:
+    commands:
+      - echo "Building Vite React app..."
+      - pnpm build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - appspec.yml
+    - '**/*'
+    - '!node_modules/**'
