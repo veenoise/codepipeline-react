@@ -157,9 +157,11 @@ export default function AwsPipelineShowcase() {
 
         <motion.section variants={fadeUp} className="text-center">
           <motion.div whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.96 }}>
-            <Button className="text-lg px-10 py-6 rounded-2xl shadow-xl bg-blue-600 hover:bg-blue-500 transition-colors">
-              Learn More About AWS CI/CD
-            </Button>
+            <a href="https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/cicd-on-aws.html" target="_blank">
+              <Button className="text-lg px-10 py-6 rounded-2xl shadow-xl bg-blue-600 hover:bg-blue-500 transition-colors">
+                Learn More About AWS CI/CD
+              </Button>
+            </a>
           </motion.div>
         </motion.section>
       </motion.div>
