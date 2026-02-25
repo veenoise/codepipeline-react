@@ -1,6 +1,6 @@
 #!/bin/bash
 export FOLDER=/var/www/vite-app
 cd $FOLDER
-cp ../.env .
+ln -s ../.env .
 
 echo "The AfterInstall deployment lifecycle event successfully completed."
